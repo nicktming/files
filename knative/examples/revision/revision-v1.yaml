@@ -1,0 +1,19 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: traffic-example
+  namespace: default
+spec:
+  template:
+    metadata:
+      name: traffic-example-v1
+    spec:
+      containers:
+      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/rest-api-go:v1
+        env:
+        - name: RESOURCE
+          value: v1
+        readinessProbe:
+          httpGet:
+            path: /
+---
