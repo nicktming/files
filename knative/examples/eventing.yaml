@@ -25,7 +25,7 @@ spec:
   template:
     spec:
       containers:
-      - image: nicktming/event-display:v0.1
+      - image: chinaman2017/event-display:v0.1
 ---
 
 apiVersion: eventing.knative.dev/v1alpha1
