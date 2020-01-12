@@ -15,7 +15,6 @@ spec:
     name: default
 
 ---
-
 apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
@@ -27,8 +26,8 @@ spec:
       containers:
 #      - image: chinaman2017/event-display:v0.1
       - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/event-display:latest
----
 
+---
 apiVersion: eventing.knative.dev/v1alpha1
 kind: Trigger
 metadata:

@@ -18,3 +18,7 @@ spec:
         env:
         - name: TARGET
           value: "serveless"
+
+---
+
+# curl -v -HHost:hello-go.default.example.com --resolve hello-go.default.example.com:31380:172.31.71.181 http://hello-go.default.example.com:31380
