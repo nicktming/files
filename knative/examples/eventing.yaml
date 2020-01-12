@@ -24,8 +24,8 @@ spec:
   template:
     spec:
       containers:
-#      - image: chinaman2017/event-display:v0.1
-      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/event-display:latest
+      - image: chinaman2017/event-display:v0.1
+#      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/event-display:latest
 
 ---
 apiVersion: eventing.knative.dev/v1alpha1
