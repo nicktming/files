@@ -23,7 +23,7 @@ spec:
   - tag: v2
     revisionName: traffic-example-v2
     percent: 10
-  - tag: v2
+  - tag: v3
     revisionName: traffic-example-v3
     percent: 10
   - tag: latest
