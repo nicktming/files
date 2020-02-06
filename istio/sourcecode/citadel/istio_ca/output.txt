@@ -1,0 +1,62 @@
+[root@master istio_ca]# ./run.sh
+2020-02-04T08:02:23.012518Z     info    The custom-defined DNS name list is [istio-pilot-service-account.istio-system:istio-pilot.istio-system]
+2020-02-04T08:02:23.018847Z     info    Use self-signed certificate as the CA certificate
+2020-02-04T08:02:23.019753Z     info    ControlZ available at 127.0.0.1:9876
+2020-02-04T08:02:23.027905Z     info    Failed to get secret (error: secrets "istio-ca-secret" not found), will create one
+2020-02-04T08:02:23.495396Z     info    Using self-generated public key: -----BEGIN CERTIFICATE-----
+MIIC3TCCAcWgAwIBAgIQcM9Cl88+ma8sLDgXSEhawjANBgkqhkiG9w0BAQsFADAY
+MRYwFAYDVQQKEw1jbHVzdGVyLmxvY2FsMB4XDTIwMDIwNDA4MDIyM1oXDTMwMDIw
+MTA4MDIyM1owGDEWMBQGA1UEChMNY2x1c3Rlci5sb2NhbDCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBAJ9Vk/+aEuulxooQuo3RRykYJn0OnvUbgRrDrWXF
+zLJaVCUKacYqLNoJ0W+1DKWrgNpxPJpO/QKPxlNvrm+M8rYU8w45b9TaKu3qHl/v
+uRi+JrYOvVpiYcp8HG6rr9QkHpbcrmNOeNCYUdgWCed1nmZ6cdg+ODHbAsVIhNdb
+0G478EMQ3qNiaSteHErLH4eSN9geUnHfchBMQgAsxr2skMpPL6UbR0yvw5W3wiZx
+mjZ7fTaDAs/ogxSWSz/16xmeW6/lLx7RP5Wze9dZpO8OqQnAWwe/jnM3kCIMnK+R
+OMYAF0bSUK+6bOM8nfUjs8EEItBouInbcp4ZefHoHYZ6MtECAwEAAaMjMCEwDgYD
+VR0PAQH/BAQDAgIEMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEB
+AG1tE7RqBLzswz/M+nbwhxTvTMxxrvD61T75y5OEC1Ry8Fd1nv2OOoGE2n51WCxT
+tc1DG0/YCknJ5kx+XJ9LICnGdpqqGegBCkGTeZjO2Y4fJ9tFwIgamT0bcTV2w6e0
+UQuLnGXqk+UuAb8qGYFNlee2MK8UyhC4HiD7VvslWqGfk7S8smZdtpe22F6E8kl4
+HYX4xxEd2E6qVV1lVl15uLj6WtwgUtvfLGto2yr8swpLDLvxIZkugzk758MKmIc7
+08EwmGMVuoQHDrp84556Cpdiv464uGVyoOh55YiOplbukVC6SDOPm9ny4QM8QWVJ
+f2bDWBJhJdWoQWTIOZmpzNo=
+-----END CERTIFICATE-----
+
+2020-02-04T08:02:23.502515Z     info    The Citadel's public key is successfully written into configmap istio-security in namespace istio-system.
+2020-02-04T08:02:23.502545Z     info    rootCertRotator Set up back off time 2m21s to start rotator.
+2020-02-04T08:02:23.502558Z     info    Creating Kubernetes controller to write issued keys and certs into secret ...
+2020-02-04T08:02:23.502619Z     info    rootCertRotator Jitter is enabled, wait 2m21s before starting root cert rotator.
+2020-02-04T08:02:23.602779Z     info    adding registry entry "k8s.cluster.local" -> "k8s.cluster.local"
+2020-02-04T08:02:23.602831Z     info    added client certificate authenticator
+2020-02-04T08:02:23.603288Z     info    Citadel monitor has started.
+2020-02-04T08:02:23.603298Z     info    Citadel has started
+2020-02-04T08:02:23.603332Z     info    monitor Monitor server started.
+2020-02-04T08:02:23.604169Z     info    Starting GRPC server on port 8060
+2020-02-04T08:02:23.610077Z     info    adding registry entry "spiffe://cluster.local/ns/default/sa/bookinfo-details" -> "spiffe://cluster.local/ns/default/sa/bookinfo-details"
+2020-02-04T08:02:23.610125Z     info    adding registry entry "spiffe://cluster.local/ns/default/sa/bookinfo-reviews" -> "spiffe://cluster.local/ns/default/sa/bookinfo-reviews"
+2020-02-04T08:02:23.610133Z     info    adding registry entry "spiffe://cluster.local/ns/default/sa/default" -> "spiffe://cluster.local/ns/default/sa/default"
+2020-02-04T08:02:23.610140Z     info    adding registry entry "spiffe://cluster.local/ns/kube-node-lease/sa/default" -> "spiffe://cluster.local/ns/kube-node-lease/sa/default"
+2020-02-04T08:02:23.610147Z     info    adding registry entry "spiffe://cluster.local/ns/kube-public/sa/default" -> "spiffe://cluster.local/ns/kube-public/sa/default"
+2020-02-04T08:02:23.610154Z     info    adding registry entry "spiffe://cluster.local/ns/tming/sa/default" -> "spiffe://cluster.local/ns/tming/sa/default"
+2020-02-04T08:02:23.610162Z     info    adding registry entry "spiffe://cluster.local/ns/default/sa/bookinfo-productpage" -> "spiffe://cluster.local/ns/default/sa/bookinfo-productpage"
+2020-02-04T08:02:23.610170Z     info    adding registry entry "spiffe://cluster.local/ns/default/sa/bookinfo-ratings" -> "spiffe://cluster.local/ns/default/sa/bookinfo-ratings"
+2020-02-04T08:02:23.610182Z     info    adding registry entry "spiffe://cluster.local/ns/istio-system/sa/default" -> "spiffe://cluster.local/ns/istio-system/sa/default"
+2020-02-04T08:02:23.610189Z     info    adding registry entry "spiffe://cluster.local/ns/kube-system/sa/coredns" -> "spiffe://cluster.local/ns/kube-system/sa/coredns"
+2020-02-04T08:02:23.610199Z     info    adding registry entry "spiffe://cluster.local/ns/kube-system/sa/default" -> "spiffe://cluster.local/ns/kube-system/sa/default"
+2020-02-04T08:02:23.786537Z     info    k8sController   Secret tming/istio.default is created successfully
+2020-02-04T08:02:23.960700Z     info    k8sController   Secret default/istio.bookinfo-details is created successfully
+2020-02-04T08:02:24.284947Z     info    k8sController   Secret default/istio.bookinfo-reviews is created successfully
+2020-02-04T08:02:25.324935Z     info    k8sController   Secret default/istio.bookinfo-productpage is created successfully
+2020-02-04T08:02:25.690407Z     info    k8sController   Secret default/istio.bookinfo-ratings is created successfully
+2020-02-04T08:02:26.147250Z     info    k8sController   Secret istio-system/istio.default is created successfully
+2020-02-04T08:03:23.507506Z     info    k8sController   CA cert in KeyCertBundle matches CA cert in istio-ca-secret. Skip reloading root cert into KeyCertBundle
+2020-02-04T08:03:23.508706Z     info    k8sController   Refreshing secret kube-system/istio.istio.default (outdated root cert)
+2020-02-04T08:03:23.692930Z     info    k8sController   Secret kube-system/istio.istio.default refreshed successfully.
+2020-02-04T08:03:23.694852Z     info    k8sController   Refreshing secret kube-public/istio.istio.default (outdated root cert)
+2020-02-04T08:03:23.978375Z     info    k8sController   Secret kube-public/istio.istio.default refreshed successfully.
+2020-02-04T08:03:23.982124Z     info    k8sController   Refreshing secret default/istio.istio.default (outdated root cert)
+2020-02-04T08:03:24.138177Z     info    k8sController   Secret default/istio.istio.default refreshed successfully.
+2020-02-04T08:03:24.139820Z     info    k8sController   Refreshing secret kube-system/istio.istio.coredns (outdated root cert)
+2020-02-04T08:03:24.352005Z     info    k8sController   Secret kube-system/istio.istio.coredns refreshed successfully.
+2020-02-04T08:03:24.354653Z     info    k8sController   Refreshing secret kube-node-lease/istio.istio.default (outdated root cert)
+2020-02-04T08:03:24.426463Z     info    k8sController   Secret kube-node-lease/istio.istio.default refreshed successfully.
