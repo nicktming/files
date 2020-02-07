@@ -1,0 +1,323 @@
+[
+    {
+        "name": "0.0.0.0_80",
+        "address": {
+            "socketAddress": {
+                "address": "0.0.0.0",
+                "portValue": 80
+            }
+        },
+        "filterChains": [
+            {
+                "filters": [
+                    {
+                        "name": "envoy.http_connection_manager",
+                        "typedConfig": {
+                            "@type": "type.googleapis.com/envoy.config.filter.network.http_connection_manager.v2.HttpConnectionManager",
+                            "statPrefix": "outbound_0.0.0.0_80",
+                            "rds": {
+                                "configSource": {
+                                    "ads": {}
+                                },
+                                "routeConfigName": "http.80"
+                            },
+                            "httpFilters": [
+                                {
+                                    "name": "mixer",
+                                    "typedConfig": {
+                                        "@type": "type.googleapis.com/istio.mixer.v1.config.client.HttpClientConfig",
+                                        "transport": {
+                                            "networkFailPolicy": {
+                                                "policy": "FAIL_CLOSE",
+                                                "baseRetryWait": "0.080s",
+                                                "maxRetryWait": "1s"
+                                            },
+                                            "checkCluster": "outbound|15004||istio-policy.istio-system.svc.cluster.local",
+                                            "reportCluster": "outbound|15004||istio-telemetry.istio-system.svc.cluster.local",
+                                            "reportBatchMaxEntries": 100,
+                                            "reportBatchMaxTime": "1s"
+                                        },
+                                        "serviceConfigs": {
+                                            "default": {
+                                                "disableCheckCalls": true
+                                            }
+                                        },
+                                        "defaultDestinationService": "default",
+                                        "mixerAttributes": {
+                                            "attributes": {
+                                                "context.proxy_version": {
+                                                    "stringValue": "1.4.3"
+                                                },
+                                                "context.reporter.kind": {
+                                                    "stringValue": "outbound"
+                                                },
+                                                "context.reporter.uid": {
+                                                    "stringValue": "kubernetes://istio-ingressgateway-85bb5b4c57-l2pcz.istio-system"
+                                                },
+                                                "source.namespace": {
+                                                    "stringValue": "istio-system"
+                                                },
+                                                "source.uid": {
+                                                    "stringValue": "kubernetes://istio-ingressgateway-85bb5b4c57-l2pcz.istio-system"
+                                                }
+                                            }
+                                        },
+                                        "forwardAttributes": {
+                                            "attributes": {
+                                                "source.uid": {
+                                                    "stringValue": "kubernetes://istio-ingressgateway-85bb5b4c57-l2pcz.istio-system"
+                                                }
+                                            }
+                                        },
+                                        "ignoreForwardedAttributes": true
+                                    }
+                                },
+                                {
+                                    "name": "envoy.cors"
+                                },
+                                {
+                                    "name": "envoy.fault"
+                                },
+                                {
+                                    "name": "envoy.router"
+                                }
+                            ],
+                            "tracing": {
+                                "operationName": "EGRESS",
+                                "clientSampling": {
+                                    "value": 100
+                                },
+                                "randomSampling": {
+                                    "value": 1
+                                },
+                                "overallSampling": {
+                                    "value": 100
+                                }
+                            },
+                            "httpProtocolOptions": {},
+                            "serverName": "istio-envoy",
+                            "streamIdleTimeout": "0s",
+                            "useRemoteAddress": true,
+                            "generateRequestId": true,
+                            "forwardClientCertDetails": "SANITIZE_SET",
+                            "setCurrentClientCertDetails": {
+                                "subject": true,
+                                "cert": true,
+                                "dns": true,
+                                "uri": true
+                            },
+                            "upgradeConfigs": [
+                                {
+                                    "upgradeType": "websocket"
+                                }
+                            ],
+                            "normalizePath": true
+                        }
+                    }
+                ]
+            }
+        ],
+        "trafficDirection": "OUTBOUND"
+    },
+    {
+        "name": "0.0.0.0_443",
+        "address": {
+            "socketAddress": {
+                "address": "0.0.0.0",
+                "portValue": 443
+            }
+        },
+        "filterChains": [
+            {
+                "filterChainMatch": {
+                    "serverNames": [
+                        "httpbin.example.com"
+                    ]
+                },
+                "tlsContext": {
+                    "commonTlsContext": {
+                        "tlsCertificateSdsSecretConfigs": [
+                            {
+                                "name": "httpbin-credential",
+                                "sdsConfig": {
+                                    "apiConfigSource": {
+                                        "apiType": "GRPC",
+                                        "grpcServices": [
+                                            {
+                                                "googleGrpc": {
+                                                    "targetUri": "unix:/var/run/ingress_gateway/sds",
+                                                    "statPrefix": "sdsstat"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "alpnProtocols": [
+                            "h2",
+                            "http/1.1"
+                        ]
+                    },
+                    "requireClientCertificate": false
+                },
+                "filters": [
+                    {
+                        "name": "envoy.http_connection_manager",
+                        "typedConfig": {
+                            "@type": "type.googleapis.com/envoy.config.filter.network.http_connection_manager.v2.HttpConnectionManager",
+                            "statPrefix": "outbound_0.0.0.0_443",
+                            "rds": {
+                                "configSource": {
+                                    "ads": {}
+                                },
+                                "routeConfigName": "https.443.https.mygateway.default"
+                            },
+                            "httpFilters": [
+                                {
+                                    "name": "mixer",
+                                    "typedConfig": {
+                                        "@type": "type.googleapis.com/istio.mixer.v1.config.client.HttpClientConfig",
+                                        "transport": {
+                                            "networkFailPolicy": {
+                                                "policy": "FAIL_CLOSE",
+                                                "baseRetryWait": "0.080s",
+                                                "maxRetryWait": "1s"
+                                            },
+                                            "checkCluster": "outbound|15004||istio-policy.istio-system.svc.cluster.local",
+                                            "reportCluster": "outbound|15004||istio-telemetry.istio-system.svc.cluster.local",
+                                            "reportBatchMaxEntries": 100,
+                                            "reportBatchMaxTime": "1s"
+                                        },
+                                        "serviceConfigs": {
+                                            "default": {
+                                                "disableCheckCalls": true
+                                            }
+                                        },
+                                        "defaultDestinationService": "default",
+                                        "mixerAttributes": {
+                                            "attributes": {
+                                                "context.proxy_version": {
+                                                    "stringValue": "1.4.3"
+                                                },
+                                                "context.reporter.kind": {
+                                                    "stringValue": "outbound"
+                                                },
+                                                "context.reporter.uid": {
+                                                    "stringValue": "kubernetes://istio-ingressgateway-85bb5b4c57-l2pcz.istio-system"
+                                                },
+                                                "source.namespace": {
+                                                    "stringValue": "istio-system"
+                                                },
+                                                "source.uid": {
+                                                    "stringValue": "kubernetes://istio-ingressgateway-85bb5b4c57-l2pcz.istio-system"
+                                                }
+                                            }
+                                        },
+                                        "forwardAttributes": {
+                                            "attributes": {
+                                                "source.uid": {
+                                                    "stringValue": "kubernetes://istio-ingressgateway-85bb5b4c57-l2pcz.istio-system"
+                                                }
+                                            }
+                                        },
+                                        "ignoreForwardedAttributes": true
+                                    }
+                                },
+                                {
+                                    "name": "envoy.cors"
+                                },
+                                {
+                                    "name": "envoy.fault"
+                                },
+                                {
+                                    "name": "envoy.router"
+                                }
+                            ],
+                            "tracing": {
+                                "operationName": "EGRESS",
+                                "clientSampling": {
+                                    "value": 100
+                                },
+                                "randomSampling": {
+                                    "value": 1
+                                },
+                                "overallSampling": {
+                                    "value": 100
+                                }
+                            },
+                            "httpProtocolOptions": {},
+                            "serverName": "istio-envoy",
+                            "streamIdleTimeout": "0s",
+                            "useRemoteAddress": true,
+                            "generateRequestId": true,
+                            "forwardClientCertDetails": "SANITIZE_SET",
+                            "setCurrentClientCertDetails": {
+                                "subject": true,
+                                "cert": true,
+                                "dns": true,
+                                "uri": true
+                            },
+                            "upgradeConfigs": [
+                                {
+                                    "upgradeType": "websocket"
+                                }
+                            ],
+                            "normalizePath": true
+                        }
+                    }
+                ]
+            }
+        ],
+        "listenerFilters": [
+            {
+                "name": "envoy.listener.tls_inspector"
+            }
+        ],
+        "trafficDirection": "OUTBOUND"
+    },
+    {
+        "address": {
+            "socketAddress": {
+                "address": "0.0.0.0",
+                "portValue": 15090
+            }
+        },
+        "filterChains": [
+            {
+                "filters": [
+                    {
+                        "name": "envoy.http_connection_manager",
+                        "config": {
+                            "codec_type": "AUTO",
+                            "http_filters": {
+                                "name": "envoy.router"
+                            },
+                            "route_config": {
+                                "virtual_hosts": [
+                                    {
+                                        "domains": [
+                                            "*"
+                                        ],
+                                        "name": "backend",
+                                        "routes": [
+                                            {
+                                                "match": {
+                                                    "prefix": "/stats/prometheus"
+                                                },
+                                                "route": {
+                                                    "cluster": "prometheus_stats"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "stat_prefix": "stats"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

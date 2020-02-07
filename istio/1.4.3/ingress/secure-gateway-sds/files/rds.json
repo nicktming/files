@@ -1,0 +1,51 @@
+[
+    {
+        "name": "http.80",
+        "virtualHosts": [
+            {
+                "name": "blackhole:80",
+                "domains": [
+                    "*"
+                ],
+                "routes": [
+                    {
+                        "name": "default",
+                        "match": {
+                            "prefix": "/"
+                        },
+                        "directResponse": {
+                            "status": 404
+                        },
+                        "typedPerFilterConfig": {
+                            "mixer": {
+                                "@type": "type.googleapis.com/istio.mixer.v1.config.client.ServiceConfig",
+                                "disableCheckCalls": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "validateClusters": false
+    },
+    {
+        "virtualHosts": [
+            {
+                "name": "backend",
+                "domains": [
+                    "*"
+                ],
+                "routes": [
+                    {
+                        "match": {
+                            "prefix": "/stats/prometheus"
+                        },
+                        "route": {
+                            "cluster": "prometheus_stats"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

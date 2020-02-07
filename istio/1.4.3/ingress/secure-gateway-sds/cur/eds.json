@@ -1,0 +1,2495 @@
+[
+    {
+        "name": "prometheus_stats",
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "127.0.0.1",
+                        "portValue": 15000
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "value": "1",
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "value": "4434",
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "value": "4434",
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "value": "1",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|9901||istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 9901
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|9153||kube-dns.kube-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.2",
+                        "portValue": 9153
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|9091||istio-policy.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.12",
+                        "portValue": 9091
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|80||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 80
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|8080||istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 8080
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|8060||istio-citadel.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.11",
+                        "portValue": 8060
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|53||kube-dns.kube-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.2",
+                        "portValue": 53
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|443||kubernetes.default.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "172.31.71.181",
+                        "portValue": 6443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|443||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|443||istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 9443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15032||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15032
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15020||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15020
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15014||istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15031||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15031
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15010||istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 15010
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15004||istio-policy.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.12",
+                        "portValue": 15004
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15443||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15011||istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 15011
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.9153_._.kube-dns.kube-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.2",
+                        "portValue": 9153
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "xds-grpc",
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "169.169.185.94",
+                        "portValue": 15011
+                    }
+                },
+                "stats": [
+                    {
+                        "value": "6",
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "value": "7",
+                        "name": "cx_total"
+                    },
+                    {
+                        "value": "225",
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "value": "220",
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "value": "1",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "value": "1",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1,
+                "hostname": "istio-pilot.istio-system"
+            }
+        ]
+    },
+    {
+        "name": "outbound|15030||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15030
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15014_._.istio-policy.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.12",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.9091_._.istio-policy.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.12",
+                        "portValue": 9091
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.9090_._.prometheus.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.13",
+                        "portValue": 9090
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15029_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15029
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.9901_._.istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 9901
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.80_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 80
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.53_._.kube-dns.kube-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.2",
+                        "portValue": 53
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.8060_._.istio-citadel.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.11",
+                        "portValue": 8060
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|443||istio-sidecar-injector.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.4",
+                        "portValue": 9443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.8080_._.istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 8080
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15020_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15020
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15014||istio-citadel.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.11",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15019_._.istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 15019
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15011_._.istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 15011
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15443_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.443_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.443_._.istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 9443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.443_._.istio-sidecar-injector.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.4",
+                        "portValue": 9443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15032_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15032
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15014_._.istio-citadel.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.11",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15004_._.istio-policy.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.12",
+                        "portValue": 15004
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15029||istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15029
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15014_._.istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|9090||prometheus.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.13",
+                        "portValue": 9090
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15014_._.istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15014||istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15031_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15031
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15010_._.istio-pilot.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.5",
+                        "portValue": 15010
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.443_._.kubernetes.default.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "172.31.71.181",
+                        "portValue": 6443
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15014||istio-policy.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.12.12",
+                        "portValue": 15014
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound_.15030_._.istio-ingressgateway.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.3",
+                        "portValue": 15030
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    {
+        "name": "outbound|15019||istio-galley.istio-system.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "10.0.14.6",
+                        "portValue": 15019
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1
+            }
+        ]
+    }
+]
