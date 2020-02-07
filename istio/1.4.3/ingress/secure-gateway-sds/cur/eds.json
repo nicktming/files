@@ -21,14 +21,14 @@
                         "name": "rq_error"
                     },
                     {
-                        "value": "4434",
+                        "value": "4661",
                         "name": "rq_success"
                     },
                     {
                         "name": "rq_timeout"
                     },
                     {
-                        "value": "4434",
+                        "value": "4661",
                         "name": "rq_total"
                     },
                     {
@@ -942,7 +942,7 @@
                         "name": "cx_total"
                     },
                     {
-                        "value": "225",
+                        "value": "237",
                         "name": "rq_error"
                     },
                     {
@@ -952,7 +952,7 @@
                         "name": "rq_timeout"
                     },
                     {
-                        "value": "220",
+                        "value": "232",
                         "name": "rq_total"
                     },
                     {
